@@ -1,38 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: rgb(110, 17, 17);
+  background-color: #faf1f1;
+}
+
+.block {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 1.1rem
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 19px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  margin: 20px;
+  width: calc(100%-20px);
+}
+
+button {
+  margin: 15px auto;
+  width: 200px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #a34cce;
+  background-color: inherit;
+  border: none;
+}
+
+img {
+  height: 100vh;
+  margin: 0;
+  width: 60%;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="password"] {
+  border: none;
+  border-bottom: 1px solid saddlebrown;
+  background-color: inherit;
+  color: darkcyan;
+  caret-color: darkcyan;
+  margin-bottom: 7px;
+  width: 100%;
+}
+
+input::placeholder, select {
+  color: darkcyan;
+  background-color: #faf1f1;
+}
+
+input[type="number"] {
+  width: 50px;
+  
+}
+
+input[type="text"]:focus{
+  outline: none;
+}
+
+input[type=radio]:checked {
+  background-color: red;
+  color: green;
+  border: 5px solid yellow
 }
